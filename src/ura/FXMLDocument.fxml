@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="466.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ura.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" graphicTextGap="5.0" layoutX="92.0" layoutY="14.0" minHeight="16" minWidth="69" opacity="0.8" text="Atendimento ura 1.0" textAlignment="CENTER" textFill="#0e0222" textOverrun="WORD_ELLIPSIS" underline="true">
+         <font>
+            <Font name="Ume P Gothic S4" size="19.0" />
+         </font>
+         <effect>
+            <SepiaTone />
+         </effect></Label>
+      <Label fx:id="LblMensagem" layoutX="57.0" layoutY="51.0" />
+      <ProgressBar fx:id="lblProgress" layoutX="75.0" layoutY="365.0" prefWidth="200.0" progress="0.0" />
+      <Button fx:id="BtnBotao" layoutX="78.0" layoutY="305.0" mnemonicParsing="false" onAction="#clicouBotao" text="Sim" />
+      <Button layoutX="206.0" layoutY="307.0" mnemonicParsing="false" text="Nao" />
+      <TextField fx:id="lblCaixa" alignment="CENTER" layoutX="98.0" layoutY="272.0" onAction="#ultimaOpcao" prefHeight="25.0" prefWidth="142.0" promptText="Escreva sua opção" />
+      <Label fx:id="lblUltima" layoutX="95.0" layoutY="245.0" text="Ultima opção:" />
+    </children>
+</AnchorPane>
