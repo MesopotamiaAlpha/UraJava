@@ -17,13 +17,12 @@ public class atendiTec implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-    FXMLDocumentController importado = new FXMLDocumentController();
-    importado.lblUltima.setText("AAAAA");
+
     }    
 
-    public String atendimento() {
-        int resposta;
-        return "Desligue e ligue seu modem.\n Problema resolvido? 1=Sim 2=Não\n";
+    public void atendimento() {
+        //neste ponto nao estou conseguindo recuperar estes dados na primeira tela
+        System.out.println("Desligue e ligue seu modem.\n Problema resolvido? 1=Sim 2=Não\n");
 
     }
     

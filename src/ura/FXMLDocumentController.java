@@ -35,17 +35,31 @@ public class FXMLDocumentController implements Initializable {
         lblUltima.setText("Ultima opção escolhida: " + teste);
         switch (teste){
                 case 1:
-                    atendiTec atendimentoTec = new atendiTec();//Aqui preciso transformar o atendimento tec em um objeto para chamar ele logo a baixo
-                    LblMensagem.setText(atendimentoTec.atendimento());//Aqui eu chamo o outro pacote
+                       teste = 0;
+                       LblMensagem.setText("Atendimento tecnico");
+                       atendimentoTecnico();
                     break;
                 case 2:
-                    System.out.println("Opção 3");
+                    System.out.println("Opção 2");
                     break;
+                default:
+                    LblMensagem.setText("Opção invalida");
         }
     }
 
     public void atendimentoTecnico (){
-        System.out.println("Atendimento técnico");
+        LblMensagem.setText("Desligue e ligue seu modem \n Problema resolvido?");
+//nesta linha erro de no lbl caixa ja ter uma valor setao,entao ele passa direto
+        lblCaixa.setText(null);
+        int teste2;
+        teste2 = Integer.parseInt(lblCaixa.getText());
+        switch (teste2){
+            case 1:
+                LblMensagem.setText("Atendimento concluido \n obrigado");
+                break;
+            default:
+                LblMensagem.setText("Continuação do atendimento");
+        }
     }
     
     @Override
